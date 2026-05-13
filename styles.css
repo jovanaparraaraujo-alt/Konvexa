@@ -5,6 +5,16 @@ body {
   background-color: #fff;
 }
 
+/* Encabezado */
+.navbar {
+  display: flex;
+  justify-content: space-between; /* separa logo y menú */
+  align-items: center;
+  padding: 15px 40px;
+  background-color: #fff;
+  border-bottom: 2px solid #f8c4d8;
+}
+
 /* Navegación principal */
 nav ul {
   list-style: none;
