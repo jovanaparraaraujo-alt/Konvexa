@@ -133,7 +133,7 @@ body {
 .cta-footer {
   text-align: center;
   padding: 80px 40px;
-  color: #fff;
+  color: #0a0909;
   background: linear-gradient(rgba(206, 197, 200, 0), rgba(201, 187, 191, 0)),
               url("footer-bg.jpg") no-repeat center center;
   background-size: cover;
