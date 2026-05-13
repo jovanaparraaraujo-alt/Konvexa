@@ -133,10 +133,13 @@ body {
 .cta-footer {
   text-align: center;
   padding: 80px 40px;
-  color: #0a0909;
-  background: linear-gradient(rgba(206, 197, 200, 0), rgba(201, 187, 191, 0)),
+  color: #0c0b0b;
+  background: linear-gradient(rgba(233, 30, 98, 0), rgba(233, 30, 98, 0)),
               url("footer-bg.jpg") no-repeat center center;
   background-size: cover;
+
+  /* Curvatura en la parte superior */
+  clip-path: ellipse(100% 80% at 50% 0%);
 }
 
 .cta-footer h2 {
