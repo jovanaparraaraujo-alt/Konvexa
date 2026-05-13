@@ -35,17 +35,6 @@ nav ul li a:hover {
   color: #ff0055;             /* color rosa al pasar el cursor */
 }
 
-/* Botón de contacto */
-.btn-cta {
-  background-color: #72364a;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
-  margin-left: 20px;
-}
-
-
 .logo {
   display: flex;
   align-items: center;
