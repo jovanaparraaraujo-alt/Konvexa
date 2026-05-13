@@ -129,6 +129,12 @@ body {
   margin-top: 20px;
 }
 
+.feature img {
+  width: 80px;   /* tamaño uniforme */
+  height: auto;
+  margin-bottom: 15px;
+}
+
 /* Footer */
 .cta-footer {
   text-align: center;
