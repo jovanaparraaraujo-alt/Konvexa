@@ -41,10 +41,10 @@ nav ul li a:hover {
 }
 
 .logo img {
-  width: 100px;   /* tamaño del logo */
+  width: 220px;   /* tamaño más amplio */
   height: auto;
-  margin-right: 15px;
 }
+
 
 .logo h1 {
   color: #e91e63;
