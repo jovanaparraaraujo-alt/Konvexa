@@ -51,6 +51,14 @@ nav ul li a:hover {
   margin: 0;
 }
 
+.hero-logo {
+  width: 250px;   /* tamaño amplio */
+  height: auto;
+  display: block;
+  margin: 0 auto 20px auto; /* centrado con espacio abajo */
+}
+
+
 .btn-cta {
   background-color: #e91e63;
   color: #fff;
