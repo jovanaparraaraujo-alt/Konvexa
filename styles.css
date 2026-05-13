@@ -74,7 +74,7 @@ nav ul li:last-child a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 40px 80px 100px;
+  padding: 20px 80px 90px;
   background:
     linear-gradient(
       to right,
@@ -106,12 +106,12 @@ nav ul li:last-child a {
 }
 
 .hero-text h1 {
-  font-size: 4rem;
-  line-height: 1.1;
+  font-size: 3.2rem;
+  line-height: 1.15;
   color: #1f2235;
   margin-bottom: 25px;
   font-weight: 800;
-  max-width: 650px;
+  max-width: 580px;
 }
 
 .hero-text p {
@@ -143,12 +143,10 @@ nav ul li:last-child a {
 }
 
 /* Imagen ejecutivo */
-.hero-image {
-  width: 45%;
-  position: relative;
-  z-index: 5;
-  display: flex;
-  justify-content: center;
+.hero-image img {
+  width: 88%;
+  max-width: 430px;
+  object-fit: contain;
 }
 
 .hero-image img {
