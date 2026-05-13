@@ -139,7 +139,7 @@ body {
   background-size: cover;
 
   /* Curvatura en la parte superior */
-  clip-path: ellipse(100% 80% at 50% 0%);
+  clip-path: ellipse(100% 25% at 50% 0%);
 }
 
 .cta-footer h2 {
