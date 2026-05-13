@@ -109,7 +109,7 @@ body {
 }
 
 .service img {
-  width: 80px;   /* íconos pequeños y uniformes */
+  width: 100px;   /* íconos pequeños y uniformes */
   height: auto;
   margin-bottom: 15px;
 }
@@ -130,7 +130,7 @@ body {
 }
 
 .feature img {
-  width: 80px;   /* tamaño uniforme */
+  width: 100px;   /* tamaño uniforme */
   height: auto;
   margin-bottom: 15px;
 }
