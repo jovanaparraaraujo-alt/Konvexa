@@ -5,15 +5,36 @@ body {
   background-color: #fff;
 }
 
-/* Barra de navegación */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 40px;
-  background-color: #fff;
-  border-bottom: 2px solid #f8c4d8;
+/* Navegación principal */
+nav ul {
+  list-style: none;
+  display: flex;              /* coloca los elementos en línea */
+  gap: 25px;                  /* espacio entre los enlaces */
+  margin: 0;
+  padding: 0;
 }
+
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+  color: #ff0055;             /* color rosa al pasar el cursor */
+}
+
+/* Botón de contacto */
+.btn-cta {
+  background-color: #72364a;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  margin-left: 20px;
+}
+
 
 .logo {
   display: flex;
