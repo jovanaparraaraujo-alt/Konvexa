@@ -8,19 +8,31 @@ body {
 /* Encabezado */
 .navbar {
   display: flex;
-  justify-content: space-between; /* separa logo y menú */
-  align-items: center;
+  justify-content: flex-start; /* menú a la izquierda */
+  align-items: flex-start;
   padding: 15px 40px;
   background-color: #fff;
   border-bottom: 2px solid #f8c4d8;
+  position: relative; /* necesario para el logo superpuesto */
+}
+
+/* Logo superpuesto */
+.logo-overlap img {
+  width: 280px;   /* tamaño amplio */
+  height: auto;
+  position: absolute;
+  top: 0;         /* parte superior dentro del header */
+  left: 40px;     /* alineado a la izquierda */
+  transform: translateY(40%); /* baja el logo para invadir el hero */
+  z-index: 10;    /* asegura que quede encima */
 }
 
 /* Navegación principal */
 nav ul {
   list-style: none;
-  display: flex;              /* coloca los elementos en línea */
-  gap: 25px;                  /* espacio entre los enlaces */
-  margin: 0;
+  display: flex;
+  gap: 25px;
+  margin-left: 350px; /* empuja el menú a la derecha del logo */
   padding: 0;
 }
 
@@ -32,39 +44,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #ff0055;             /* color rosa al pasar el cursor */
-}
-
-.logo {
-  display: flex;
-  align-items: center;
-}
-
-.logo img {
-  width: 220px;   /* tamaño más amplio */
-  height: auto;
-}
-
-
-.logo h1 {
-  color: #e91e63;
-  margin: 0;
-}
-
-.hero-logo {
-  width: 250px;   /* tamaño amplio */
-  height: auto;
-  display: block;
-  margin: 0 auto 20px auto; /* centrado con espacio abajo */
-}
-
-
-.btn-cta {
-  background-color: #e91e63;
-  color: #fff;
-  padding: 10px 20px;
-  border-radius: 5px;
-  text-decoration: none;
+  color: #ff0055; /* color rosa al pasar el cursor */
 }
 
 /* Hero section */
