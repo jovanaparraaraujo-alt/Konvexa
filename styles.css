@@ -58,12 +58,12 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: #fcf5f7;
+  color: #ffffff;
 }
 
 /* Botón contacto */
 nav ul li:last-child a {
-  background: #f9d6e4;
+  background: #ffffff;
   padding: 12px 28px;
   border-radius: 40px;
   color: #e91e63;
@@ -174,7 +174,7 @@ nav ul li:last-child a {
 }
 
 .feature h3 {
-  color: #e91e63;
+  color: #ffffff;
 }
 
 /* Servicios */
