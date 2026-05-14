@@ -79,12 +79,7 @@ nav ul li:last-child a {
   justify-content: space-between;
   align-items: center;
   padding: 0 80px 90px;
-  background:
-    linear-gradient(
-      to right,
-      rgba(255,255,255,0.98),
-      rgba(252,228,236,0.95)
-    );
+  background: #fff;
   position: relative;
   overflow: hidden;
 }
@@ -97,7 +92,7 @@ nav ul li:last-child a {
   left: -5%;
   width: 110%;
   height: 220px;
-  background: #f8d7e4;
+  background: rgba(248, 215, 228, 0.45);
   border-radius: 50%;
   z-index: 1;
 }
@@ -151,12 +146,6 @@ nav ul li:last-child a {
 .hero-image img {
   width: 88%;
   max-width: 430px;
-  object-fit: contain;
-}
-
-.hero-image img {
-  width: 100%;
-  max-width: 520px;
   object-fit: contain;
 }
 
