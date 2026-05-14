@@ -406,7 +406,7 @@ nav ul li:last-child a {
   align-items: center;
   gap: 80px;
   padding: 50px 20px;
-  background: linear-gradient(to right, #b3b3b3, #7a7a7a);
+  background: linear-gradient(to right, #463f3f, #7a7a7a);
   color: #fff;
   text-align: center;
 }
