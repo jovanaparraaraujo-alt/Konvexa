@@ -387,6 +387,14 @@ body {
   border-radius: 10px; 
   box-shadow: 0 4px 12px rgba(0,0,0,0.1); 
 }
+/* Contenido en dos columnas */ 
+.about-content { 
+  display: flex; 
+  align-items: flex-start; 
+  justify-content: space-around; 
+  gap: 40px; 
+  flex-wrap: wrap; 
+  }
 
 /* Texto */
 .about-text {
