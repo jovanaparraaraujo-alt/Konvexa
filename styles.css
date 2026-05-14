@@ -517,45 +517,20 @@ nav ul li:last-child a {
   line-height: 1.6;
 }
 
-/* Experiencia */
-.about-stats {
+/* Franja inferior */
+.service-stats {
   margin-top: 50px;
   display: flex;
   justify-content: center;
   gap: 60px;
-  background-color: #ff9d9d49; /* gris claro */
+  background-color: #db8686b9;
   padding: 30px;
   border-radius: 10px;
 }
 
-.experiencia {
-   margin-top: 50px;
-   border-radius: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 80px;
-  padding: 50px 20px;
-  background: linear-gradient(to right, #ece6e6, #fc7575);
-  color: #fff;
-  text-align: center;
-}
-
-.experiencia .dato h3 {
-  font-size: 1.5rem;
+.service-stats .stat h3 {
+  color: #e91e63;
   font-weight: 600;
-  color: #fff;
-}
-
-.experiencia .dato p {
-  font-size: 1rem;
-  color: #e0e0e0;
-}
-
-.experiencia .separador {
-  width: 1px;
-  height: 60px;
-  background-color: rgba(192, 9, 9, 0.637);
 }
 
 /* Footer */
