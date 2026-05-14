@@ -697,3 +697,35 @@ nav ul li:last-child a {
   margin-bottom: 20px;
   font-size: 1.8rem;
 }
+
+/* ARTÍCULOS DEL BLOG */
+.articulo {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 20px;
+  line-height: 1.8;
+  color: #333;
+}
+
+.articulo h2 {
+  color: #b03060;
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.articulo-img {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 30px;
+}
+
+.articulo ol {
+  margin-left: 30px;
+  margin-bottom: 20px;
+}
+
+.volver {
+  text-align: center;
+  margin-top: 40px;
+}
