@@ -170,45 +170,55 @@ nav ul li:last-child a {
 
 
 /* Servicios */
+/* Sección Servicios */
 .services {
   background-color: #fff; /* fondo blanco */
-  padding: 50px 40px;     /* espacio interno */
-  margin-top: -30px;      /* sube la sección un poco */
-  border-radius: 10px;    /* opcional, esquinas suaves */
+  padding: 60px 40px;     /* más espacio interno */
+  margin-top: -20px;      /* sube la sección un poco */
+  border-radius: 10px;
   text-align: center;
 }
 
 .services h2 {
-  color: #e91e63; /* rosa intenso */
-  margin-bottom: 15px;
+  color: #e91e63;
+  margin-bottom: 25px; /* más separación respecto a las imágenes */
 }
 
 .services p {
   color: #555;
-  margin-bottom: 30px;
+  margin-bottom: 40px; /* más espacio debajo del subtítulo */
 }
 
-
+/* Cuadrícula de servicios */
 .service-grid {
   display: flex;
-  justify-content: space-around;
-  margin-top: 30px;
+  justify-content: center; /* centra las tarjetas */
+  gap: 40px;               /* espacio entre ellas */
+  flex-wrap: wrap;         /* que se acomoden en móviles */
+  margin-top: 20px;
 }
 
 .service {
-  max-width: 250px;
+  max-width: 280px;
   text-align: center;
 }
 
 .service img {
-  width: 100px;   /* íconos pequeños y uniformes */
+  width: 120px;   /* tamaño uniforme */
   height: auto;
-  margin-bottom: 15px;
+  margin-bottom: 20px; /* más espacio entre imagen y título */
 }
 
 .service h3 {
   color: #e91e63;
+  margin-bottom: 10px;
 }
+
+.service p {
+  color: #555;
+  line-height: 1.6;
+}
+
 
 .btn-secondary {
   background-color: #ffffff;
