@@ -353,6 +353,13 @@ nav ul li:last-child a {
   line-height: 1.1;
 }
 
+body {
+  font-family: 'Manrope', sans-serif;
+  margin: 0;
+  color: #333;
+  background-color: #fff;
+}
+
 /* Subtítulo */
 .subtitle {
   color: #666;
