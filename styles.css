@@ -170,7 +170,7 @@ nav ul li:last-child a {
 .services {
   text-align: center;
   padding: 60px 40px;
-  background-color: #fce4ec;
+  background-color: #ffffff;
 }
 
 .service-grid {
@@ -195,7 +195,7 @@ nav ul li:last-child a {
 }
 
 .btn-secondary {
-  background-color: #fff;
+  background-color: #ffffff;
   border: 2px solid #e91e63;
   color: #e91e63;
   padding: 10px 20px;
