@@ -387,21 +387,34 @@ nav ul li:last-child a {
   line-height: 1.6;
 }
 
-/* Estadísticas */
-.about-stats {
-  margin-top: 50px;
+/* Experiencia */
+.experiencia {
   display: flex;
   justify-content: center;
-  gap: 60px;
-  background-color: #e0e0e0; /* gris claro */
-  padding: 30px;
-  border-radius: 10px;
+  align-items: center;
+  gap: 80px;
+  padding: 50px 20px;
+  background: linear-gradient(to right, #b3b3b3, #7a7a7a);
+  color: #fff;
+  text-align: center;
+  margin-top: 0;
 }
 
-.about-stats .stat h3 {
+.experiencia .dato h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
   color: #fff;
-  font-size: 1.2rem;
-  margin: 0;
+}
+
+.experiencia .dato p {
+  font-size: 1rem;
+  color: #e0e0e0;
+}
+
+.experiencia .separador {
+  width: 1px;
+  height: 60px;
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 /* Footer corporativo */
