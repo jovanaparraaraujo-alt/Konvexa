@@ -608,42 +608,40 @@ nav ul li:last-child a {
   }
 }
 
-/* Hero del Blog */
+/* BLOG */
 .hero-blog {
   text-align: center;
-  padding: 60px 40px;
-  background-color: #fde8ef; /* rosado leve */
+  background-color: #fce4ec;
+  padding: 60px 20px;
 }
 
 .hero-blog h1 {
-  color: #e91e63; /* rosa intenso */
+  color: #b03060;
   font-size: 2.5rem;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .hero-blog p {
-  color: #666;
+  color: #333;
   font-size: 1.2rem;
 }
 
-/* Cuadrícula de artículos */
 .blog-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
   gap: 30px;
-  padding: 40px;
+  padding: 60px 40px;
+  background-color: #fff;
 }
 
 .blog-post {
   background-color: #fff;
   border-radius: 10px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 300px;
+  text-align: center;
   overflow: hidden;
-  transition: transform 0.3s ease;
-}
-
-.blog-post:hover {
-  transform: translateY(-5px);
 }
 
 .blog-post img {
@@ -653,50 +651,54 @@ nav ul li:last-child a {
 }
 
 .blog-post h3 {
-  color: #e91e63;
-  font-size: 1.4rem;
-  margin: 15px;
+  color: #b03060;
+  font-size: 1.2rem;
+  margin: 15px 0 10px;
 }
 
 .blog-post p {
-  color: #b3004b;
-  margin: 0 15px 20px;
-  line-height: 1.6;
+  color: #333;
+  font-size: 1rem;
+  padding: 0 15px 20px;
 }
 
-.blog-post .btn-secondary {
+.btn-secondary {
   display: inline-block;
-  margin: 0 15px 20px;
-  background-color: #e91e63;
-  color: #fff;
+  background-color: #f8bbd0;
+  color: #000;
   padding: 10px 20px;
-  border-radius: 5px;
+  border-radius: 6px;
   text-decoration: none;
   font-weight: 600;
-  transition: background-color 0.3s ease;
+  margin-bottom: 20px;
 }
 
-.blog-post .btn-secondary:hover {
-  background-color: #b3004b;
+.btn-secondary:hover {
+  background-color: #e8b6c9;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .hero-blog {
-    padding: 40px 20px;
-  }
-
-  .hero-blog h1 {
-    font-size: 2rem;
-  }
-
-  .blog-grid {
-    padding: 20px;
-    gap: 20px;
-  }
-
-  .blog-post img {
-    height: 150px;
-  }
+/* Footer CTA */
+.cta-footer {
+  text-align: center;
+  background: linear-gradient(90deg, #b03060, #e8b6c9);
+  color: #fff;
+  padding: 40px 20px;
 }
 
+.cta-footer h2 {
+  margin-bottom: 20px;
+  font-size: 1.6rem;
+}
+
+.btn-primary {
+  background-color: #fff;
+  color: #b03060;
+  padding: 12px 30px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.btn-primary:hover {
+  background-color: #fce4ec;
+}
