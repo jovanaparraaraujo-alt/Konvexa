@@ -388,6 +388,16 @@ nav ul li:last-child a {
 }
 
 /* Experiencia */
+.about-stats {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  background-color: #e0e0e0; /* gris claro */
+  padding: 30px;
+  border-radius: 10px;
+}
+
 .experiencia {
   display: flex;
   justify-content: center;
