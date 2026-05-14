@@ -609,6 +609,45 @@ nav ul li:last-child a {
 }
 
 /* BLOG */
+/* HEADER GENERAL */
+header {
+  background-color: #fff;
+  padding: 15px 40px;
+  border-bottom: 1px solid #eee;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between; /* separa logo y menú */
+  align-items: center;
+}
+
+.logo {
+  height: 60px;
+  width: auto;
+}
+
+/* MENÚ DE NAVEGACIÓN */
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #111;
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+  color: #b03060; /* rosa corporativo */
+}
+
 .hero-blog {
   text-align: center;
   background-color: #fce4ec;
