@@ -388,17 +388,9 @@ nav ul li:last-child a {
 }
 
 /* Experiencia */
-.about-stats {
-  margin-top: 50px;
-  display: flex;
-  justify-content: center;
-  gap: 60px;
-  background-color: #e0e0e0; /* gris claro */
-  padding: 30px;
-  border-radius: 10px;
-}
-
 .experiencia {
+   margin-top: 50px;
+   border-radius: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -407,7 +399,6 @@ nav ul li:last-child a {
   background: linear-gradient(to right, #b3b3b3, #7a7a7a);
   color: #fff;
   text-align: center;
-  margin-top: 0;
 }
 
 .experiencia .dato h3 {
