@@ -393,7 +393,7 @@ nav ul li:last-child a {
   display: flex;
   justify-content: center;
   gap: 60px;
-  background-color: #333;
+  background-color: #e0e0e0; /* gris claro */
   padding: 30px;
   border-radius: 10px;
 }
