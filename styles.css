@@ -163,8 +163,11 @@ nav ul li:last-child a {
 }
 
 .feature h3 {
-  color: #ffffff;
+  color: #e91e63; /* rosa intenso */
+  font-size: 1.2rem;
+  margin-top: 10px;
 }
+
 
 /* Servicios */
 .services {
