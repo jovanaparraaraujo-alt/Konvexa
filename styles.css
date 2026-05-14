@@ -830,9 +830,16 @@ header {
   align-items: center;
 }
 
+/* LOGO */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
 .logo {
-  height: 60px;
-  width: auto;
+  width: 220px;
+  height: auto;
+  display: block;
 }
 
 /* MENÚ DE NAVEGACIÓN */
