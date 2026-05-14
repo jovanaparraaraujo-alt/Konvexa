@@ -609,45 +609,91 @@ nav ul li:last-child a {
 }
 
 /* BLOG */
-/* HEADER GENERAL */
+/* =========================
+   HEADER BLOG
+========================= */
+
 header {
-  background-color: #fff;
-  padding: 15px 40px;
-  border-bottom: 1px solid #eee;
+  background: #fff;
+  padding: 18px 70px;
+  border-bottom: 1px solid #f1f1f1;
 }
 
 .header-container {
   display: flex;
-  justify-content: space-between; /* separa logo y menú */
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+/* LOGO */
+.logo-container {
+  display: flex;
   align-items: center;
 }
 
 .logo {
-  height: 60px;
-  width: auto;
+  width: 220px;
+  height: auto;
+  display: block;
 }
 
-/* MENÚ DE NAVEGACIÓN */
+/* MENÚ */
+nav {
+  margin-left: auto;
+}
+
 nav ul {
   list-style: none;
   display: flex;
-  gap: 25px;
+  align-items: center;
+  gap: 28px;
   margin: 0;
   padding: 0;
 }
 
+nav ul li {
+  display: flex;
+  align-items: center;
+}
+
 nav ul li a {
   text-decoration: none;
-  color: #111;
+  color: #1f2235;
   font-weight: 600;
-  transition: color 0.3s ease;
+  font-size: 0.98rem;
+  transition: 0.3s ease;
+  white-space: nowrap;
 }
 
 nav ul li a:hover,
 nav ul li a.active {
-  color: #b03060; /* rosa corporativo */
+  color: #e91e63;
 }
 
+/* RESPONSIVE */
+@media (max-width: 768px) {
+
+  header {
+    padding: 20px;
+  }
+
+  .header-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .logo {
+    width: 180px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+
+}
 .hero-blog {
   text-align: center;
   background-color: #fce4ec;
@@ -729,7 +775,8 @@ nav ul li a.active {
   background-size: cover;
 
   /* Curvatura arriba */
-  clip-path: ellipse(100% 100% at 50% 100%);
+  clip-path: elli
+pse(100% 100% at 50% 100%);
 }
 
 .cta-footer h2 {
