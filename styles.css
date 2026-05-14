@@ -783,7 +783,7 @@ footer {
 }
 
 /* Footer */
-.footer {
+footer {
   background-color: #111;
   color: #fff;
   text-align: center;
@@ -791,9 +791,7 @@ footer {
   margin-top: 40px;
 }
 
-.footer p {
+footer p {
   margin: 5px 0;
   font-size: 0.95rem;
 }
-
-/* Footer */
