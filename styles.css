@@ -517,20 +517,45 @@ nav ul li:last-child a {
   line-height: 1.6;
 }
 
-/* Franja inferior */
-.service-stats {
+/* Experiencia */
+.about-stats {
   margin-top: 50px;
   display: flex;
   justify-content: center;
   gap: 60px;
-  background-color: linear-gradient(135deg, #fde8ef 0%, #f06a6a 100%);
+  background-color: #ff9d9d49; /* gris claro */
   padding: 30px;
   border-radius: 10px;
 }
 
-.service-stats .stat h3 {
-  color: #e91e63;
+.experiencia {
+   margin-top: 50px;
+   border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 80px;
+  padding: 50px 20px;
+  background: linear-gradient(to right, #ece6e6, #fc7575);
+  color: #fff;
+  text-align: center;
+}
+
+.experiencia .dato h3 {
+  font-size: 1.5rem;
   font-weight: 600;
+  color: #fff;
+}
+
+.experiencia .dato p {
+  font-size: 1rem;
+  color: #e0e0e0;
+}
+
+.experiencia .separador {
+  width: 1px;
+  height: 60px;
+  background-color: rgba(192, 9, 9, 0.637);
 }
 
 /* Footer */
