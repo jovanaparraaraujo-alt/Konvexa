@@ -929,3 +929,93 @@ footer {
 .footer-privacidad a:hover {
   text-decoration: underline;
 }
+
+/* CONTACTO */
+.contacto {
+  text-align: center;
+  padding: 60px 20px;
+  background-color: #fff;
+}
+
+.contacto h2 {
+  color: #b03060;
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.contacto p {
+  color: #333;
+  font-size: 1.1rem;
+  margin-bottom: 40px;
+}
+
+.contact-info {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.info-box {
+  background-color: #fce4ec;
+  border-radius: 10px;
+  padding: 20px;
+  width: 280px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.info-box h3 {
+  color: #b03060;
+  margin-bottom: 10px;
+}
+
+.info-box p {
+  color: #333;
+  font-size: 0.95rem;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+}
+
+.contact-form button {
+  align-self: center;
+}
+
+/* FOOTER CONTACTO */
+.footer-contacto {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 25px 20px;
+  margin-top: 60px;
+}
+
+.footer-contacto a {
+  color: #f8bbd0;
+  text-decoration: none;
+}
+
+.footer-contacto a:hover {
+  text-decoration: underline;
+}
+
+.footer-contacto .copy {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #ccc;
+}
