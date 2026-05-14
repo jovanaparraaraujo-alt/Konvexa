@@ -781,3 +781,17 @@ footer {
 .privacidad-link:hover {
   text-decoration: underline;
 }
+
+/* Footer */
+.footer {
+  background-color: #111;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  margin-top: 40px;
+}
+
+.footer p {
+  margin: 5px 0;
+  font-size: 0.95rem;
+}
