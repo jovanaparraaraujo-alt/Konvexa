@@ -837,7 +837,7 @@ header {
 }
 
 .logo {
-  width: 220px;
+  max-width: 140px; /* tamaño máximo del logo */
   height: auto;
   display: block;
 }
