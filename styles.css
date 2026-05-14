@@ -782,17 +782,25 @@ footer {
   text-decoration: underline;
 }
 
-/* Footer */
-footer {
-  background-color: #111;
+/* Footer exclusivo para Aviso de Privacidad */
+.footer-privacidad {
+  background-color: #111; /* negro corporativo */
   color: #fff;
   text-align: center;
   padding: 20px;
   margin-top: 40px;
 }
 
-footer p {
+.footer-privacidad p {
   margin: 5px 0;
   font-size: 0.95rem;
 }
 
+.footer-privacidad a {
+  color: #b03060; /* rosa suave corporativo */
+  text-decoration: none;
+}
+
+.footer-privacidad a:hover {
+  text-decoration: underline;
+}
