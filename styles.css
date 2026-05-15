@@ -322,26 +322,37 @@ nav ul li:last-child a {
   border-radius: 2px;
 }
 
-/* Beneficios adicionales */
-!-- Beneficios adicionales -->
-  <div class="extra-benefits">
-    <div class="benefit"><h3>Respuesta Rápida</h3><p>Atención ágil y efectiva.</p></div>
-    <div class="benefit"><h3>Cumplimiento Legal</h3><p>Procesos apegados a la ley.</p></div>
-    <div class="benefit"><h3>Reportes Transparentes</h3><p>Información clara y detallada.</p></div>
-    <div class="benefit"><h3>Atención Personalizada</h3><p>Soluciones adaptadas a ti.</p></div>
-  </div>
  /* Beneficios adicionales */
-.extra-benefits {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 40px;
-  max-width: 1100px;
-  margin: 50px auto;
+.extra-benefit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fde4ec;
+  padding: 15px 20px;
+  border-radius: 5px;
+  border-right: 2.5px solid #110207;
 }
 
-.extra-benefits .benefit {
-  text-align: center;
+.extra-benefit img {
+  width: 45px;
+  height: 45px;
+  margin-right: 15px;
 }
+
+.extra-benefit .text {
+  text-align: left;
+}
+
+.extra-benefit h3 {
+  color: #e91e63;
+  margin: 0 0 5px;
+}
+
+.extra-benefit p {
+  color: #333;
+  margin: 0;
+}
+
  
 /* Ver mas*/
 .btn-secondary {
