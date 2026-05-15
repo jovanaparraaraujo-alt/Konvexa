@@ -170,51 +170,54 @@ nav ul li:last-child a {
 
 /* Sección Servicios */
 .services {
-  background-color: #fff; /* fondo blanco */
-  padding: 60px 40px;     /* más espacio interno */
-  margin-top: -10px;      /* sube un poco la sección */
+  background-color: #fff !important;
+  padding: 35px 40px 70px;
+  margin-top: 0;
   text-align: center;
 }
 
 .services h2 {
   color: #e91e63;
-  margin-bottom: 30px; /* más separación respecto a las imágenes */
+  margin: 0 0 12px;
 }
 
-.services p {
+.services > p {
   color: #555;
-  margin-bottom: 40px; /* más espacio debajo del subtítulo */
+  margin: 0 0 45px;
 }
 
 .service-grid {
   display: flex;
-  justify-content: center; /* centra las tarjetas */
-  gap: 50px;               /* espacio entre ellas */
-  flex-wrap: wrap;         /* que se acomoden en móviles */
+  justify-content: center;
+  align-items: flex-start;
+  gap: 70px;
+  flex-wrap: wrap;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .service {
-  max-width: 280px;
+  width: 280px;
   text-align: center;
 }
 
 .service img {
   width: 120px;
   height: auto;
-  margin-bottom: 20px; /* espacio entre imagen y título */
+  display: block;
+  margin: 0 auto 28px;
 }
 
 .service h3 {
   color: #e91e63;
-  margin-bottom: 10px;
+  margin: 0 0 12px;
 }
 
 .service p {
   color: #555;
   line-height: 1.6;
+  margin: 0;
 }
-
-
 
 .btn-secondary {
   background-color: #ffffff;
