@@ -168,20 +168,17 @@ nav ul li:last-child a {
   margin-top: 10px;
 }
 
-
-/* Servicios */
 /* Sección Servicios */
 .services {
   background-color: #fff; /* fondo blanco */
   padding: 60px 40px;     /* más espacio interno */
-  margin-top: -20px;      /* sube la sección un poco */
-  border-radius: 10px;
+  margin-top: -10px;      /* sube un poco la sección */
   text-align: center;
 }
 
 .services h2 {
   color: #e91e63;
-  margin-bottom: 25px; /* más separación respecto a las imágenes */
+  margin-bottom: 30px; /* más separación respecto a las imágenes */
 }
 
 .services p {
@@ -189,13 +186,11 @@ nav ul li:last-child a {
   margin-bottom: 40px; /* más espacio debajo del subtítulo */
 }
 
-/* Cuadrícula de servicios */
 .service-grid {
   display: flex;
   justify-content: center; /* centra las tarjetas */
-  gap: 40px;               /* espacio entre ellas */
+  gap: 50px;               /* espacio entre ellas */
   flex-wrap: wrap;         /* que se acomoden en móviles */
-  margin-top: 20px;
 }
 
 .service {
@@ -204,9 +199,9 @@ nav ul li:last-child a {
 }
 
 .service img {
-  width: 120px;   /* tamaño uniforme */
+  width: 120px;
   height: auto;
-  margin-bottom: 20px; /* más espacio entre imagen y título */
+  margin-bottom: 20px; /* espacio entre imagen y título */
 }
 
 .service h3 {
@@ -218,6 +213,7 @@ nav ul li:last-child a {
   color: #555;
   line-height: 1.6;
 }
+
 
 
 .btn-secondary {
