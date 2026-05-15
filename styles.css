@@ -334,7 +334,7 @@ nav ul li:last-child a {
   border-radius: 10px;
 }
 
-.benefit {
+.extra-benefit {
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -344,22 +344,22 @@ nav ul li:last-child a {
   border-right: 3px solid #e91e63; /* línea a la derecha */
 }
 
-.benefit img {
+.extra-benefit img {
   width: 45px;
   height: 45px;
   margin-right: 15px;
 }
 
-.benefit .text {
+.extra-benefit .text {
   text-align: left;
 }
 
-.benefit h3 {
+.extra-benefit h3 {
   color: #e91e63;
   margin: 0 0 5px;
 }
 
-.benefit p {
+.extra-benefit p {
   color: #333;
   margin: 0;
 }
