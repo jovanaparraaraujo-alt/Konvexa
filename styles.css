@@ -341,7 +341,7 @@ nav ul li:last-child a {
   background-color: #fde4ec; /* mismo tono rosado */
   padding: 15px 20px;
   border-radius: 5px;
-  border-right: 1px solid #ffbed4; /* línea a la derecha */
+  border-right: 1px solid #0a0708; /* línea a la derecha */
 }
 
 .extra-benefit img {
