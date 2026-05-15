@@ -342,8 +342,8 @@ nav ul li:last-child a {
   justify-content: flex-start; /* ícono a la izquierda, texto a la derecha */
   background-color: #fde4ec;
   padding: 15px 20px;
-  border-radius: 8px;
-  border-right: 3px solid #e91e63; /* línea a la derecha */
+  border-radius: 5px;
+  border-right: 2.2px solid #020001; /* línea a la derecha */
 }
 
 /* Íconos */
