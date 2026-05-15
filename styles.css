@@ -202,8 +202,8 @@ nav ul li:last-child a {
 }
 
 .benefit img {
-  width: 60px;
-  height: 60px;
+  width: 100px;
+  height: 100px;
   margin-bottom: 15px;
 }
 
@@ -226,7 +226,7 @@ nav ul li:last-child a {
 }
 
 .titulo-seccion {
-  font-size: 0.9rem;
+  font-size: 1.2rem;
   color: #e91e63;
   font-weight: 700;
   letter-spacing: 1px;
