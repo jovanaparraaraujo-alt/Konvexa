@@ -543,13 +543,13 @@ nav ul li:last-child a {
   display: flex;
   justify-content: center;
   gap: 60px;
-  background-color: #ffcbcbe7;
+  background-color: #ff1f1f4f;
   padding: 30px;
   border-radius: 10px;
 }
 
 .service-stats .stat h3 {
-  color: #e91e63;
+  color: #080708;
   font-weight: 600;
 }
 
