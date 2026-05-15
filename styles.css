@@ -163,6 +163,7 @@ nav ul li:last-child a {
   padding: 8px 20px;
   border-radius: 8px;
   margin-bottom: 5px; /* menos espacio debajo del título */
+  font-weight: 600;
 }
 
 .why-us .subtitle {
@@ -215,6 +216,9 @@ nav ul li:last-child a {
   color: #555;
 }
 
+/* =========================
+    NUESTROS SERVICIOS  
+=========================*/
 .servicios {
   background-color: #fff;
   text-align: center;
@@ -230,15 +234,15 @@ nav ul li:last-child a {
 }
 
 .subtitulo-seccion {
-  font-size: 1.8rem;
-  font-weight: 600;
+  font-size: 2.2rem;
+  font-weight: 750;
   color: #333;
   margin-bottom: 10px;
 }
 
 .subtitulo-seccion .rosa {
   color: #e91e63;
-  font-weight: 700;
+  font-weight: 750;
 }
 
 .descripcion-seccion {
