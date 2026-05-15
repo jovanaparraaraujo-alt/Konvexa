@@ -172,7 +172,7 @@ nav ul li:last-child a {
 .services {
   background-color: #fff !important;
   padding: 35px 40px 70px;
-  margin-top: 0;
+  margin-top: 50;
   text-align: center;
 }
 
@@ -197,7 +197,7 @@ nav ul li:last-child a {
 }
 
 .service {
-  width: 280px;
+  max-width: 250px;
   text-align: center;
 }
 
