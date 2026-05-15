@@ -151,14 +151,19 @@ nav ul li:last-child a {
 
 /* Features */
 .features {
-  display: flex;
-  justify-content: space-around;
-  padding: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  max-width: 1100px;
+  margin: 0 auto;
+  gap: 90px;
+  padding: 40px 40px 10px;
+  justify-items: center;
   background-color: #fff;
 }
 
 .feature {
-  max-width: 250px;
+  width: 100%;
+  max-width: 260px;
   text-align: center;
 }
 
