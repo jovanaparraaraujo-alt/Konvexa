@@ -325,16 +325,46 @@ nav ul li:last-child a {
 /* Beneficios adicionales */
 .extra-benefits {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 40px;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
   max-width: 1100px;
   margin: 50px auto;
+  background-color: #fde4ec; /* tono rosado suave */
+  padding: 20px;
+  border-radius: 10px;
 }
 
-.extra-benefits .benefit {
-  text-align: center;
+.benefit {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #fde4ec; /* mismo tono rosado */
+  padding: 15px 20px;
+  border-radius: 8px;
+  border-right: 3px solid #e91e63; /* línea a la derecha */
 }
 
+.benefit img {
+  width: 45px;
+  height: 45px;
+  margin-right: 15px;
+}
+
+.benefit .text {
+  text-align: left;
+}
+
+.benefit h3 {
+  color: #e91e63;
+  margin: 0 0 5px;
+}
+
+.benefit p {
+  color: #333;
+  margin: 0;
+}
+ 
+/* Ver mas*/
 .btn-secondary {
   background-color: #ffffff;
   border: 2px solid #e91e63;
