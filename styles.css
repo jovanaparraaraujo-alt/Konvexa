@@ -334,14 +334,14 @@ nav ul li:last-child a {
   border-radius: 10px;
 }
 
-.extra-benefit {
+.benefit {
   display: flex;
   align-items: center;
   justify-content: space-between;
   background-color: #fde4ec; /* mismo tono rosado */
   padding: 15px 20px;
-  border-radius: 8px;
-  border-right: 3px solid #e91e63; /* línea a la derecha */
+  border-radius: 5px;
+  border-right: 1px solid #ffbed4; /* línea a la derecha */
 }
 
 .extra-benefit img {
