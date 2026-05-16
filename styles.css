@@ -322,35 +322,46 @@ nav ul li:last-child a {
   border-radius: 2px;
 }
 
- /* Beneficios adicionales */
-/* Contenedor general */
+ /* =========================
+   BENEFICIOS ADICIONALES
+========================= */
+
 .extra-benefits {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 30px;
-  max-width: 1100px;
-  margin: 50px auto;
-  background-color: #fde4ec; /* tono rosado suave */
-  padding: 20px;
-  border-radius: 10px;
+  grid-template-columns: repeat(4, 1fr);
+  max-width: 1150px;
+  margin: 70px auto;
+  background: #fde7ef;
+  border-radius: 18px;
+  overflow: hidden;
 }
 
 /* Cada bloque */
 .extra-benefit {
   display: flex;
   align-items: center;
-  justify-content: flex-start; /* ícono a la izquierda, texto a la derecha */
-  background-color: #fde4ec;
-  padding: 10px 20px; /* reduce el padding lateral */
-  border-radius: 2px;
-  border-right: 1.0px solid #020001; /* línea a la derecha */
+  gap: 18px;
+  padding: 30px 25px;
+  position: relative;
+}
+
+/* Línea divisora elegante */
+.extra-benefit:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 25%;
+  width: 1px;
+  height: 50%;
+  background: rgba(0,0,0,0.15);
 }
 
 /* Íconos */
 .extra-benefit img {
-  width: 100px;
-  height: 100px;
-  margin-right: 25px; /* separa más el texto del ícono */
+  width: 52px;
+  height: 52px;
+  object-fit: contain;
+  flex-shrink: 0;
 }
 
 /* Texto */
@@ -360,12 +371,53 @@ nav ul li:last-child a {
 
 .extra-benefit h3 {
   color: #e91e63;
-  margin: 0 0 5px;
+  font-size: 1.25rem;
+  line-height: 1.15;
+  margin: 0 0 8px;
+  font-weight: 700;
 }
 
 .extra-benefit p {
   color: #333;
+  font-size: 0.98rem;
+  line-height: 1.5;
   margin: 0;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+  .extra-benefits {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .extra-benefit:nth-child(2)::after {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+
+  .extra-benefits {
+    grid-template-columns: 1fr;
+  }
+
+  .extra-benefit::after {
+    display: none;
+  }
+
+  .extra-benefit {
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+  }
+
+  .extra-benefit .text {
+    text-align: center;
+  }
 }
 
 /* Ver mas*/
