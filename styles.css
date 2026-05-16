@@ -474,17 +474,19 @@ nav ul li:last-child a {
 
 /* Móviles (pantallas menores a 600px) */
 @media (max-width: 600px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 20px;
+  .cta-footer {
+    clip-path: none; /* elimina la curvatura */
+    padding: 40px 20px; /* reduce padding para móvil */
+    background:
+      linear-gradient(rgba(26, 25, 25, 0), rgba(233, 30, 98, 0)),
+      url("footer-bg.jpg") no-repeat center center;
+    background-size: cover;
   }
 
-  nav ul {
-    flex-direction: column;
-    gap: 20px;
-    margin-top: 15px;
+  .cta-footer h2 {
+    font-size: 1.2rem; /* más pequeño para móvil */
   }
+}
 
   .hero-text h1 {
     font-size: 2rem;
@@ -522,7 +524,6 @@ nav ul li:last-child a {
   .cta-footer h2 {
     font-size: 1.4rem;
   }
-}
 
  /* Sección Nosotros */
 .about {
