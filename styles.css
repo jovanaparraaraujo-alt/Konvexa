@@ -341,7 +341,7 @@ nav ul li:last-child a {
   align-items: center;
   justify-content: flex-start; /* ícono a la izquierda, texto a la derecha */
   background-color: #fde4ec;
-  padding: 10px 40px;
+  padding: 10px 20px; /* reduce el padding lateral */
   border-radius: 2px;
   border-right: 1.0px solid #020001; /* línea a la derecha */
 }
@@ -350,7 +350,7 @@ nav ul li:last-child a {
 .extra-benefit img {
   width: 100px;
   height: 100px;
-  margin-right: 20px;
+  margin-right: 25px; /* separa más el texto del ícono */
 }
 
 /* Texto */
