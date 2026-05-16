@@ -385,42 +385,6 @@ nav ul li:last-child a {
   margin: 0;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
-
-@media (max-width: 900px) {
-
-  .extra-benefits {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .extra-benefit:nth-child(2)::after {
-    display: none;
-  }
-}
-
-@media (max-width: 600px) {
-
-  .extra-benefits {
-    grid-template-columns: 1fr;
-  }
-
-  .extra-benefit::after {
-    display: none;
-  }
-
-  .extra-benefit {
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-  }
-
-  .extra-benefit .text {
-    text-align: center;
-  }
-}
-
 /* Ver mas*/
 .btn-container {
   text-align: center; /* centra el botón horizontalmente */
@@ -466,92 +430,98 @@ nav ul li:last-child a {
 }
 
 /* =========================
-   RESPONSIVE CELULAR
+   RESPONSIVE DESIGN
 ========================= */
 
-@media (max-width: 768px) {
-
-  /* NAVBAR */
+/* Tablets (pantallas menores a 992px) */
+@media (max-width: 992px) {
   .navbar {
-    padding: 20px;
-    justify-content: center;
+    padding: 25px 40px;
   }
 
   .logo-overlap {
-    position: relative;
-    left: auto;
-    top: auto;
-    width: 220px;
-    margin-bottom: 20px;
+    left: 40px;
+    width: 250px;
   }
 
-  nav {
-    width: 100%;
-    margin-top: 120px;
-  }
-
-  nav ul {
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-  }
-
-  nav ul li:last-child a {
-    padding: 10px 20px;
-  }
-
-  /* HERO */
   .hero {
     flex-direction: column;
     text-align: center;
-    padding: 30px 20px 70px;
-  }
-
-  .hero::after {
-    height: 120px;
-    bottom: -60px;
+    padding: 40px 20px;
   }
 
   .hero-text {
     width: 100%;
-    padding-top: 20px;
+    padding-top: 100px;
+  }
+
+  .hero-image img {
+    width: 70%;
+    margin-top: 30px;
+  }
+
+  .extra-benefits {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    padding: 25px;
+  }
+
+  .extra-benefit img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+/* Móviles (pantallas menores a 600px) */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 15px;
   }
 
   .hero-text h1 {
-    font-size: 2.2rem;
-    max-width: 100%;
+    font-size: 2rem;
   }
 
   .hero-text p {
     font-size: 1rem;
-    max-width: 100%;
-    margin: 0 auto 30px;
   }
 
-  .hero-image {
-    width: 100%;
-    margin-top: 30px;
+  .extra-benefits {
+    grid-template-columns: 1fr;
+    text-align: center;
   }
 
-  .hero-image img {
-    width: 90%;
-    max-width: 320px;
-  }
-
-  /* FEATURES */
-  .features {
+  .extra-benefit {
     flex-direction: column;
     align-items: center;
-    gap: 30px;
+    border-right: none;
+    border-bottom: 1px solid rgba(0,0,0,0.15);
   }
 
-  /* SERVICIOS */
-  .service-grid {
-    flex-direction: column;
-    align-items: center;
-    gap: 30px;
+  .extra-benefit img {
+    margin: 0 0 10px 0;
   }
 
+  .btn-secondary {
+    padding: 12px 25px;
+    font-size: 1rem;
+  }
+
+  .cta-footer {
+    padding: 50px 20px;
+  }
+
+  .cta-footer h2 {
+    font-size: 1.4rem;
+  }
 }
 
  /* Sección Nosotros */
