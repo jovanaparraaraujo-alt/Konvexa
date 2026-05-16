@@ -358,11 +358,11 @@ nav ul li:last-child a {
 
 /* Íconos */
 .extra-benefit img {
-  width: 78px;
-  height: 78px;
+  width: 90px;
+  height: 90px;
   object-fit: contain;
   flex-shrink: 0;
-  margin-left: -8px;
+  margin-left: -10px;
 }
 
 /* Texto */
