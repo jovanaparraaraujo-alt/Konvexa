@@ -666,7 +666,7 @@ nav ul li:last-child a {
 .services {
   text-align: center;
   padding: 60px 40px;
-  background-color: #fde8ef; /* rosado leve */
+  background-color: hsl(0, 0%, 100%); 
 }
 
 .services h2 {
