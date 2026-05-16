@@ -422,6 +422,11 @@ nav ul li:last-child a {
 }
 
 /* Ver mas*/
+.btn-container {
+  text-align: center; /* centra el botón horizontalmente */
+  margin-top: 20px;
+}
+
 .btn-secondary {
   background-color: #ffffff;
   border: 2px solid #e91e63;
