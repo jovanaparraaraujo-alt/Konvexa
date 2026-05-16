@@ -340,8 +340,8 @@ nav ul li:last-child a {
 .extra-benefit {
   display: flex;
   align-items: center;
-  gap: 18px;
-  padding: 30px 25px;
+  gap: 14px;
+  padding: 30px 18px;
   position: relative;
 }
 
@@ -358,10 +358,11 @@ nav ul li:last-child a {
 
 /* Íconos */
 .extra-benefit img {
-  width: 52px;
-  height: 52px;
+  width: 78px;
+  height: 78px;
   object-fit: contain;
   flex-shrink: 0;
+  margin-left: -8px;
 }
 
 /* Texto */
