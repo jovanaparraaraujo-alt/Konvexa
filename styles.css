@@ -638,7 +638,7 @@ nav ul li:last-child a {
 .about-title {
   color: #e91e63;
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 2.2rem;
   letter-spacing: 1px;
   margin-bottom: 10px;
 }
@@ -684,9 +684,12 @@ nav ul li:last-child a {
 
 /* Nuestra Esencia */
 .about-essence {
-  margin-top: 40px;
+  text-align: center;
+  margin-top: 60px;
+  padding: 40px 20px;
 }
 
+/* Títulos principales */
 .section-title {
   color: #e91e63;
   font-weight: 700;
@@ -696,7 +699,7 @@ nav ul li:last-child a {
 }
 
 .about-essence h2 {
-  font-size: 2rem;
+  font-size: 2.2rem;
   font-weight: 800;
   color: #1f2235;
   margin-bottom: 15px;
@@ -735,18 +738,24 @@ nav ul li:last-child a {
   box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
 
-.essence-card img {
-  width: 65px;
-  margin-bottom: 15px;
+/* Línea rosa debajo de cada título */
+.line {
+  width: 50px;
+  height: 3px;
+  background-color: #e91e63;
+  margin: 10px auto 20px;
+  border-radius: 2px;
 }
 
+/* Títulos de las tarjetas */
 .essence-card h3 {
-  color: #e91e63;
+  color: #1f2235;
   font-size: 1.3rem;
-  margin-bottom: 10px;
   font-weight: 700;
+  margin-bottom: 5px;
 }
 
+/* Texto y lista */
 .essence-card p,
 .essence-card ul {
   color: #333;
@@ -762,6 +771,21 @@ nav ul li:last-child a {
 
 .essence-card ul li {
   margin-bottom: 6px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .about-essence h2 {
+    font-size: 1.8rem;
+  }
+
+  .essence-text {
+    font-size: 0.95rem;
+  }
+
+  .essence-card {
+    padding: 25px 20px;
+  }
 }
 
 /* Estadísticas */
