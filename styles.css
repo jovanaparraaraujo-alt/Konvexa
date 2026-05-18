@@ -343,53 +343,25 @@ nav ul li:last-child a {
   background: rgba(0,0,0,0.15);
 }
 
-/* Contenedor general */
-.extra-benefits {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  max-width: 1150px;
-  margin: 70px auto;
-  background: #fde7ef;
-  border-radius: 18px;
-  overflow: hidden;
-}
-
-/* Cada bloque */
-.extra-benefit {
-  display: flex;
-  flex-direction: column; /* apila imagen y texto verticalmente */
-  align-items: center;
-  padding: 25px 15px;
-  position: relative;
-  text-align: center;
-}
-
-/* Línea divisora elegante */
-.extra-benefit:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  right: 0;
-  top: 25%;
-  width: 1px;
-  height: 50%;
-  background: rgba(0,0,0,0.15);
-}
-
-/* Imágenes */
+/* Íconos */
 .extra-benefit img {
-  width: 100%;
-  max-width: 220px; /* controla el ancho */
-  height: auto;
-  border-radius: 10px;
-  object-fit: cover;
-  margin-bottom: 15px;
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  flex-shrink: 0;
+  margin-left: -10px;
 }
 
 /* Texto */
+.extra-benefit .text {
+  text-align: left;
+}
+
 .extra-benefit h3 {
   color: #e91e63;
   font-size: 1.25rem;
-  margin-bottom: 8px;
+  line-height: 1.15;
+  margin: 0 0 8px;
   font-weight: 700;
 }
 
