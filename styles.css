@@ -596,7 +596,11 @@ nav ul li:last-child a {
   }
 }
 
- /* Sección Nosotros */
+ /* =========================
+   2 SECCION NOSOTROS 
+========================= */
+
+.footer {
 .about {
   text-align: center;
   padding: 60px 40px;
@@ -732,7 +736,11 @@ nav ul li:last-child a {
 
 }
 
-/* Sección Servicios */
+/* =========================
+   3 SECCION SERVICIOS 
+========================= */
+
+.footer {
 .services {
   text-align: center;
   padding: 60px 40px;
