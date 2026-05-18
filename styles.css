@@ -719,11 +719,145 @@ nav ul li:last-child a {
   color: #d1d5db;
 }
 
-@media (max-width: 768px) {
+.about {
+  text-align: center;
+  padding: 60px 40px;
+  background-color: #fff;
+}
 
+.about-header h2 {
+  color: #e91e63;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  font-size: 2rem;
+  font-weight: 750;
+  color: #1f2235;
+  margin-bottom: 40px;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
+  flex-wrap: wrap;
+  margin-bottom: 60px;
+}
+
+.about-text {
+  max-width: 500px;
+  text-align: left;
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.7;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 450px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Nuestra Esencia */
+.about-essence {
+  margin-top: 40px;
+}
+
+.section-title {
+  color: #e91e63;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.about-essence h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #1f2235;
+  margin-bottom: 15px;
+}
+
+.essence-text {
+  color: #555;
+  margin-bottom: 40px;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.essence-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.essence-card {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 25px;
+  text-align: center;
+}
+
+.essence-card img {
+  width: 60px;
+  margin-bottom: 15px;
+}
+
+.essence-card h3 {
+  color: #e91e63;
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+
+.essence-card p,
+.essence-card ul {
+  color: #333;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.essence-card ul {
+  list-style: none;
+  padding: 0;
+}
+
+.essence-card ul li {
+  margin-bottom: 6px;
+}
+
+/* Estadísticas */
+.about-stats {
+  margin-top: 60px;
+  background-color: #111827;
+  color: #fff;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  padding: 40px 20px;
+  border-radius: 10px;
+}
+
+.stat h3 {
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+
+.stat p {
+  font-size: 0.95rem;
+  color: #d1d5db;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
   .about-content {
     flex-direction: column;
-    gap: 40px;
+    text-align: center;
   }
 
   .about-text {
@@ -731,9 +865,12 @@ nav ul li:last-child a {
   }
 
   .about-image img {
-    max-width: 100%;
+    max-width: 320px;
   }
 
+  .subtitle {
+    font-size: 1.5rem;
+  }
 }
 
 /* =========================
