@@ -826,13 +826,6 @@ nav ul li:last-child a {
    3 SECCION SERVICIOS 
 ========================= */
 
-.footer {
-.services {
-  text-align: center;
-  padding: 60px 40px;
-  background-color: hsl(0, 0%, 100%); 
-}
-
 .services h2 {
   color: #e91e63; /* rosa intenso */
   font-size: 2.2rem;
@@ -903,6 +896,13 @@ nav ul li:last-child a {
 .footer p {
   margin: 5px 0;
   font-size: 0.95rem;
+}
+
+.footer {
+.services {
+  text-align: center;
+  padding: 60px 40px;
+  background-color: hsl(0, 0%, 100%); 
 }
 
 /* --- Responsive para móviles y tablets --- */
