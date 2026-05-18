@@ -795,10 +795,10 @@ nav ul li:last-child a {
 }
 
 .about-stats {
-  background-color: #e7efff;
+  background-color: #0b1220; /* azul oscuro */
   color: #fff;
   padding: 60px 40px;
-  border-radius: 10px;
+  border-radius: 0 0 10px 10px; /* bordes inferiores redondeados */
   text-align: center;
 }
 
