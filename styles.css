@@ -561,6 +561,41 @@ nav ul li:last-child a {
   }
 }
 
+/* Tablets */
+@media (max-width: 992px) {
+  .extra-benefits {
+    grid-template-columns: repeat(2, 1fr); /* dos columnas en tablet */
+  }
+}
+
+/* Móviles */
+@media (max-width: 600px) {
+  .extra-benefits {
+    display: flex;              /* fila horizontal */
+    overflow-x: auto;           /* scroll horizontal */
+    gap: 15px;
+    padding: 20px;
+    scroll-snap-type: x mandatory; /* efecto de “snap” al deslizar */
+  }
+
+  .extra-benefit {
+    flex: 0 0 80%;              /* cada bloque ocupa 80% del ancho */
+    scroll-snap-align: center;  /* se centra al deslizar */
+    flex-direction: column;     /* imagen arriba, texto abajo */
+    align-items: center;
+    text-align: center;
+    border-right: none;         /* quita línea divisoria */
+    border-bottom: 1px solid rgba(0,0,0,0.15);
+  }
+
+  .extra-benefit img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+  }
+}
+
  /* Sección Nosotros */
 .about {
   text-align: center;
