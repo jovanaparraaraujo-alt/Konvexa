@@ -426,95 +426,74 @@ nav ul li:last-child a {
    RESPONSIVE DESIGN
 ========================= */
 
-/* Tablets (pantallas menores a 992px) */
+/* Tablets */
 @media (max-width: 992px) {
   .navbar {
-    padding: 25px 40px;
-  }
-
-  .logo-overlap {
-    left: 40px;
-    width: 250px;
-  }
-
-  .hero {
-    flex-direction: column;
-    text-align: center;
-    padding: 40px 20px;
-  }
-
-  .hero-text {
-    width: 100%;
-    padding-top: 100px;
-  }
-
-  .hero-image img {
-    width: 70%;
-    margin-top: 30px;
-  }
-
-  .extra-benefits {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-    padding: 25px;
-  }
-
-  .extra-benefit img {
-    width: 70px;
-    height: 70px;
-  }
-}
-
-/* Móviles (pantallas menores a 600px) */
-@media (max-width: 600px) {
-  .navbar {
-    flex-direction: column;
-    align-items: flex-start;
-    clip-path: none; /* elimina la curvatura */
+    flex-direction: column; /* apila logo y menú */
+    align-items: center;
     padding: 20px;
   }
 
+  .logo-overlap {
+    position: static; /* quita posición absoluta */
+    width: 250px;     /* logo más pequeño */
+    margin-bottom: 15px;
+  }
+
+  nav {
+    margin-left: 0;
+  }
+
   nav ul {
-    flex-direction: column;
+    flex-direction: row;   /* menú horizontal */
+    flex-wrap: wrap;       /* se acomoda si no cabe */
     gap: 20px;
-    margin-top: 15px;
+    justify-content: center;
   }
 
-  .hero-text h1 {
-    font-size: 2rem;
+  nav ul li a {
+    font-size: 0.9rem; /* texto más pequeño */
+  }
+}
+
+/* Móviles */
+@media (max-width: 600px) {
+  .logo-overlap {
+    width: 200px; /* logo aún más pequeño */
   }
 
-  .hero-text p {
-    font-size: 1rem;
+  nav ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
   }
 
-  .extra-benefits {
-    grid-template-columns: 1fr;
-    text-align: center;
+  nav ul li a {
+    font-size: 0.85rem;
   }
+}
 
-  .extra-benefit {
-    flex-direction: column;
-    align-items: center;
-    border-right: none;
-    border-bottom: 1px solid rgba(0,0,0,0.15);
+@media (max-width: 992px) {
+  .benefits-grid {
+    grid-template-columns: repeat(2, 1fr); /* dos columnas en tablet */
   }
+}
 
-  .extra-benefit img {
-    margin: 0 0 10px 0;
+@media (max-width: 600px) {
+  .benefits-grid {
+    grid-template-columns: 1fr; /* una columna en móvil */
   }
+}
 
-  .btn-secondary {
-    padding: 12px 25px;
-    font-size: 1rem;
-  }
-
+@media (max-width: 600px) {
   .cta-footer {
-    padding: 50px 20px;
+    clip-path: none; /* elimina curvatura */
+    padding: 40px 20px; /* menos padding */
   }
 
   .cta-footer h2 {
-    font-size: 1.4rem;
+    font-size: 1.2rem;
   }
 }
 
