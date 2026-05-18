@@ -693,8 +693,8 @@ nav ul li:last-child a {
 .section-title {
   color: #e91e63;
   font-weight: 700;
-  font-size: 1rem;
-  margin-bottom: 10px;
+  font-size: 2.1rem;
+  margin-bottom: 7px;
   letter-spacing: 1px;
 }
 
@@ -773,99 +773,107 @@ nav ul li:last-child a {
   margin-bottom: 6px;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .about-essence h2 {
-    font-size: 1.8rem;
-  }
-
-  .essence-text {
-    font-size: 0.95rem;
-  }
-
-  .essence-card {
-    padding: 25px 20px;
-  }
+/* Sección de estadísticas */
+.about-stats {
+  background-color: #0b1220;
+  color: #fff;
+  padding: 60px 40px;
+  border-radius: 10px;
+  text-align: center;
 }
 
-/* Estadísticas */
-.about-stats {
-  margin-top: 80px;
-  background-color: #111827;
+/* Encabezado superior */
+.stats-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 40px;
+  flex-wrap: wrap;
+}
+
+.stats-icon img {
+  width: 45px;
+  height: 45px;
+}
+
+.stats-header p {
+  font-size: 1.1rem;
   color: #fff;
+  line-height: 1.6;
+}
+
+.stats-header .highlight {
+  color: #e91e63;
+  font-weight: 600;
+}
+
+/* Cuadrícula de estadísticas */
+.stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 30px;
-  padding: 50px 30px;
-  border-radius: 10px;
+  border-top: 1px solid #1e293b;
+  padding-top: 30px;
+}
+
+.stat {
+  text-align: center;
+  position: relative;
+}
+
+.stat img {
+  width: 40px;
+  margin-bottom: 15px;
 }
 
 .stat h3 {
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #fff;
+  margin-bottom: 5px;
+}
+
+.stat-title {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #e91e63;
   margin-bottom: 8px;
 }
 
-.stat p {
+.stat-text {
   font-size: 0.95rem;
   color: #d1d5db;
+  line-height: 1.6;
 }
 
-/* =========================
-   RESPONSIVE
-========================= */
+/* Líneas divisorias */
+.stat:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  right: -15px;
+  top: 20%;
+  height: 60%;
+  width: 1px;
+  background-color: #1e293b;
+}
 
-@media (max-width: 992px) {
-  .subtitle {
-    font-size: 2rem;
-  }
-
-  .about-content {
+/* Responsive */
+@media (max-width: 768px) {
+  .stats-header {
     flex-direction: column;
     text-align: center;
   }
 
-  .about-text {
-    text-align: center;
-  }
-
-  .about-image img {
-    max-width: 350px;
-  }
-}
-
-@media (max-width: 600px) {
-  .about {
-    padding: 60px 20px;
-  }
-
-  .subtitle {
-    font-size: 1.6rem;
-  }
-
-  .about-text {
-    font-size: 1rem;
-  }
-
-  .essence-card img {
-    width: 55px;
-  }
-
-  .about-stats {
+  .stats-grid {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    padding: 30px 15px;
   }
 
-  .stat h3 {
-    font-size: 1rem;
-  }
-
-  .stat p {
-    font-size: 0.85rem;
+  .stat:not(:last-child)::after {
+    display: none;
   }
 }
-
 
 /* =========================
    SEGUNDA -SECCIÓN SERVICIOS
