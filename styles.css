@@ -84,19 +84,6 @@ nav ul li:last-child a {
   overflow: hidden;
 }
 
-/* Curva inferior rosa */
-.hero::after {
-  content: "";
-  position: absolute;
-  bottom: -70px;
-  left: -5%;
-  width: 110%;
-  height: 140px;
-  background: rgba(248, 215, 228, 0.45);
-  border-radius: 50%;
-  z-index: 1;
-}
-
 /* Texto */
 .hero-text {
   width: 50%;
