@@ -797,7 +797,7 @@ nav ul li:last-child a {
 .about-stats {
   background-color: #0b1220; /* azul oscuro */
   color: #fff;
-  padding: 60px 40px;
+  padding: 20px 40px 40px;
   border-radius: 0 0 10px 10px; /* bordes inferiores redondeados */
   text-align: center;
 }
