@@ -600,6 +600,19 @@ nav ul li:last-child a {
    SECCIÓN NOSOTROS
 ========================= */
 
+/* Logo */
+.logo {
+  position: absolute;
+  left: 40px;       /* lo coloca en la esquina izquierda */
+  top: 25px;        /* ajusta verticalmente */
+}
+
+.logo img {
+  width: 180px;     /* tamaño visible pero equilibrado */
+  height: auto;
+  display: block;
+}
+
 .about {
   font-family: 'Manrope', sans-serif;
   text-align: center;
