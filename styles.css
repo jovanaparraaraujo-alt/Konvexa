@@ -145,12 +145,12 @@ nav ul li:last-child a {
 
 .why-us h2 {
   display: inline-block;
-  background-color: #fde8ef; /* fondito rosado */
+  background-color: #ffffff; /* fondito rosado */
   color: #e91e63;
   padding: 8px 20px;
   border-radius: 8px;
-  margin-bottom: 5px; /* menos espacio debajo del título */
-  font-weight: 600;
+  margin-bottom: 3px; /* menos espacio debajo del título */
+  font-weight: 750;
 }
 
 .why-us .subtitle {
