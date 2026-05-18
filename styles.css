@@ -775,7 +775,7 @@ nav ul li:last-child a {
 
 /* Sección de estadísticas */
 .about-stats {
-  background-color: #0b1220;
+  background-color: #e7efff;
   color: #fff;
   padding: 60px 40px;
   border-radius: 10px;
@@ -858,22 +858,6 @@ nav ul li:last-child a {
   background-color: #1e293b;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .stats-header {
-    flex-direction: column;
-    text-align: center;
-  }
-
-  .stats-grid {
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-
-  .stat:not(:last-child)::after {
-    display: none;
-  }
-}
 
 /* =========================
    SEGUNDA -SECCIÓN SERVICIOS
