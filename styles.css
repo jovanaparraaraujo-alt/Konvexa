@@ -149,7 +149,7 @@ nav ul li:last-child a {
   color: #e91e63;
   padding: 8px 20px;
   border-radius: 8px;
-  margin-bottom: 3px; /* menos espacio debajo del título */
+  margin-bottom: 15px; /* menos espacio debajo del título */
   font-weight: 750;
 }
 
