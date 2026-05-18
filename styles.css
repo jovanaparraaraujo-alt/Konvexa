@@ -780,13 +780,12 @@ nav ul li:last-child a {
   background-color: #fff; /* fondo blanco */
   color: #111827; /* texto oscuro */
   padding: 30px 40px;
-  text-align: center;
   border-radius: 10px 10px 0 0; /* bordes superiores redondeados */
-}
-
-.stats-header .highlight {
-  color: #e91e63; /* rosa corporativo */
-  font-weight: 600;
+  display: flex; /* coloca el icono y texto en la misma línea */
+  align-items: center; /* centra verticalmente */
+  justify-content: center; /* centra horizontalmente */
+  gap: 15px; /* espacio entre icono y texto */
+  text-align: left; /* texto alineado a la izquierda */
 }
 
 .stats-icon img {
@@ -794,6 +793,19 @@ nav ul li:last-child a {
   height: 45px;
 }
 
+.stats-header p {
+  font-size: 1.1rem;
+  color: #111827;
+  line-height: 1.6;
+  margin: 0; /* elimina espacio extra */
+}
+
+.stats-header .highlight {
+  color: #e91e63; /* rosa corporativo */
+  font-weight: 600;
+}
+
+/* Cuadrícula de estadísticas */
 .about-stats {
   background-color: #0b1220; /* azul oscuro */
   color: #fff;
@@ -802,7 +814,6 @@ nav ul li:last-child a {
   text-align: center;
 }
 
-/* Cuadrícula de estadísticas */
 .stats-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
