@@ -774,22 +774,19 @@ nav ul li:last-child a {
 }
 
 /* Sección de estadísticas */
-.about-stats {
-  background-color: #e7efff;
-  color: #fff;
-  padding: 60px 40px;
-  border-radius: 10px;
+
+/* Frase superior con fondo blanco */
+.stats-header {
+  background-color: #fff; /* fondo blanco */
+  color: #111827; /* texto oscuro */
+  padding: 30px 40px;
   text-align: center;
+  border-radius: 10px 10px 0 0; /* bordes superiores redondeados */
 }
 
-/* Encabezado superior */
-.stats-header {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 15px;
-  margin-bottom: 40px;
-  flex-wrap: wrap;
+.stats-header .highlight {
+  color: #e91e63; /* rosa corporativo */
+  font-weight: 600;
 }
 
 .stats-icon img {
@@ -797,15 +794,12 @@ nav ul li:last-child a {
   height: 45px;
 }
 
-.stats-header p {
-  font-size: 1.1rem;
+.about-stats {
+  background-color: #e7efff;
   color: #fff;
-  line-height: 1.6;
-}
-
-.stats-header .highlight {
-  color: #e91e63;
-  font-weight: 600;
+  padding: 60px 40px;
+  border-radius: 10px;
+  text-align: center;
 }
 
 /* Cuadrícula de estadísticas */
@@ -857,7 +851,6 @@ nav ul li:last-child a {
   width: 1px;
   background-color: #1e293b;
 }
-
 
 /* =========================
    SEGUNDA -SECCIÓN SERVICIOS
