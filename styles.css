@@ -1089,9 +1089,12 @@ nav ul li a.active {
 
 .blog-post img {
   width: 100%;
-  height: 180px;
-  object-fit: cover;
+  max-width: 300px;   /* límite de ancho */
+  height: auto;       /* mantiene proporción */
+  border-radius: 8px; /* opcional, esquinas suaves */
+  object-fit: cover;  /* recorta si es necesario */
 }
+
 
 .blog-post h3 {
   color: #b03060;
@@ -1384,4 +1387,5 @@ footer {
   font-size: 0.9rem;
   color: #ccc;
 }
+
 }
