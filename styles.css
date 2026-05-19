@@ -1215,7 +1215,7 @@ header {
 }
 
 .logo {
-  height: 60px;
+  height: 80px; /* antes 60px */
 }
 
 nav ul {
@@ -1243,19 +1243,19 @@ nav ul li a.active {
 .hero-blog {
   text-align: center;
   padding: 60px 20px;
-  background: linear-gradient(135deg, #0b1220, #1f2235);
-  color: #fff;
+  background-color: #fff; /* fondo blanco */
+  color: #111827; /* texto oscuro */
 }
 
 .hero-blog h1 {
   font-size: 2.8rem;
   margin-bottom: 15px;
-  color: #e91e63;
+  color: #e91e63; /* rosa corporativo */
 }
 
 .hero-blog p {
   font-size: 1.2rem;
-  color: #d1d5db;
+  color: #111827; /* texto negro */
 }
 
 /* =========================
@@ -1332,7 +1332,7 @@ nav ul li a.active {
 .cta-footer h2 {
   font-size: 2rem;
   margin-bottom: 20px;
-  color: #e91e63;
+  color: #000000;
 }
 
 .btn-primary {
