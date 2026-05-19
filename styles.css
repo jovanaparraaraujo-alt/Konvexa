@@ -1044,145 +1044,132 @@ nav ul li:last-child a {
   }
 }
 
-
 /* =========================
    SEGUNDA -SECCIÓN SERVICIOS
 ========================= */
+/* =========================
+   HEADER SERVICIOS
+========================= */
+.navbar {
+  background-color: #0b1220; /* azul oscuro */
+  padding: 15px 40px;
+}
 
+.navbar nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar nav ul li a {
+  color: #fff; /* texto blanco */
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+.navbar nav ul li a:hover,
+.navbar nav ul li a.active {
+  color: #e91e63; /* rosa corporativo */
+}
+
+/* =========================
+   SECCIÓN SERVICIOS
+========================= */
 .services {
-  text-align: center;
-  padding: 60px 40px;
   background-color: #fff;
+  padding: 60px 40px;
+  text-align: center;
 }
 
 .services h2 {
-  color: #e91e63; /* rosa intenso */
-  font-size: 2.2rem;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #0b1220; /* azul oscuro */
   margin-bottom: 10px;
 }
 
-.subtitle {
-  color: #666;
+.services .subtitle {
+  font-size: 1.2rem;
+  color: #e91e63; /* rosa corporativo */
   margin-bottom: 40px;
-  font-size: 1.1rem;
 }
 
-/* Cuadrícula de servicios */
+/* Grid de servicios */
 .service-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 30px;
+  margin-bottom: 50px;
 }
 
 .service-box {
-  background-color: #fff;
-  border-radius: 10px;
+  background: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   padding: 25px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-  transition: transform 0.3s ease;
+  text-align: left;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .service-box:hover {
   transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
 }
 
 .service-box h3 {
-  color: #b3004b;
-  margin-bottom: 10px;
   font-size: 1.3rem;
+  font-weight: 700;
+  color: #e91e63; /* rosa */
+  margin-bottom: 10px;
 }
 
 .service-box p {
-  color: #0c0a0b;
+  font-size: 0.95rem;
+  color: #333;
   line-height: 1.6;
 }
 
-/* Franja inferior */
+/* =========================
+   ESTADÍSTICAS
+========================= */
 .service-stats {
-  margin-top: 50px;
   display: flex;
   justify-content: center;
-  gap: 60px;
-  background-color: rgba(255, 31, 31, 0.31);
-  padding: 30px;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+
+.service-stats .stat {
+  background-color: #0b1220; /* azul oscuro */
+  color: #fff;
   border-radius: 10px;
+  padding: 20px 30px;
+  text-align: center;
+  flex: 0 0 250px;
 }
 
 .service-stats .stat h3 {
-  color: #080708;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #e91e63; /* rosa */
 }
 
-/* Footer */
+/* =========================
+   FOOTER
+========================= */
 .footer {
-  background-color: #111;
+  background-color: #0b1220;
   color: #fff;
   text-align: center;
-  padding: 20px;
-  margin-top: 40px;
+  padding: 30px 20px;
 }
 
 .footer p {
   margin: 5px 0;
   font-size: 0.95rem;
-}
-
-/* --- Responsive para móviles y tablets --- */
-@media (max-width: 768px) {
-  .services {
-    padding: 40px 20px;
-  }
-
-  .services h2 {
-    font-size: 1.8rem;
-  }
-
-  .subtitle {
-    font-size: 1rem;
-    margin-bottom: 30px;
-  }
-
-  .service-grid {
-    grid-template-columns: 1fr;
-    gap: 20px;
-  }
-
-  .service-box {
-    padding: 20px;
-  }
-
-  .service-box h3 {
-    font-size: 1.2rem;
-  }
-
-  .service-box p {
-    font-size: 0.95rem;
-  }
-
-  .service-stats {
-    flex-direction: column;
-    gap: 20px;
-    padding: 20px;
-  }
-
-  .service-stats .stat h3 {
-    font-size: 1rem;
-  }
-}
-
-@media (min-width: 769px) and (max-width: 1024px) {
-  .service-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
-  }
-
-  .service-box {
-    padding: 25px;
-  }
-
-  .service-stats {
-    gap: 40px;
-  }
 }
 
 /* =========================
@@ -1371,9 +1358,3 @@ nav ul li a.active {
   }
 }
 
-header {
-  background-color: #0b1220; /* azul oscuro */
-  padding: 15px 40px;
-  position: relative;
-  z-index: 10;
-}
