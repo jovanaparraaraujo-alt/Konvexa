@@ -1370,3 +1370,10 @@ nav ul li a.active {
     max-width: 400px;
   }
 }
+
+header {
+  background-color: #0b1220; /* azul oscuro */
+  padding: 15px 40px;
+  position: relative;
+  z-index: 10;
+}
