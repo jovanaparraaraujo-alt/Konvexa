@@ -1357,3 +1357,92 @@ nav ul li a.active {
   }
 }
 
+/* =========================
+   HEADER (igual que Blog)
+========================= */
+header {
+  background-color: #0b1220; /* azul oscuro */
+  padding: 15px 40px;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  padding: 0;
+}
+
+header nav ul li a {
+  color: #fff; /* texto blanco */
+  font-weight: 600;
+  transition: color 0.3s ease;
+}
+
+header nav ul li a:hover,
+header nav ul li a.active {
+  color: #e91e63; /* rosa corporativo */
+}
+
+/* =========================
+   CUARTA SECCIÓN PRIVACIDAD
+========================= */
+.privacidad {
+  background-color: #fff; /* fondo blanco */
+  padding: 60px 40px;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.privacidad h2 {
+  font-size: 2.2rem;
+  font-weight: 800;
+  color: #0b1220; /* azul oscuro */
+  margin-bottom: 20px;
+}
+
+.privacidad h3 {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #e91e63; /* rosa */
+  margin-top: 30px;
+  margin-bottom: 10px;
+}
+
+.privacidad p,
+.privacidad ul {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+}
+
+.privacidad ul {
+  padding-left: 20px;
+  list-style: disc;
+}
+
+/* =========================
+   FOOTER PRIVACIDAD
+========================= */
+.footer-privacidad {
+  background-color: #0b1220;
+  color: #fff;
+  text-align: center;
+  padding: 30px 20px;
+}
+
+.footer-privacidad .copy {
+  font-size: 0.95rem;
+}
+
+.footer-privacidad .privacidad-link {
+  color: #e91e63;
+  font-weight: 600;
+}
+
