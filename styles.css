@@ -1045,10 +1045,7 @@ nav ul li:last-child a {
 }
 
 /* =========================
-   SEGUNDA -SECCIÓN SERVICIOS
-========================= */
-/* =========================
-   HEADER SERVICIOS
+   SEGUNDA -SECCION SERVICIOS
 ========================= */
 .navbar {
   background-color: #0b1220; /* azul oscuro */
@@ -1078,7 +1075,7 @@ nav ul li:last-child a {
    SECCIÓN SERVICIOS
 ========================= */
 .services {
-  background-color: #fff;
+  background-color: #fff; /* fondo blanco */
   padding: 60px 40px;
   text-align: center;
 }
@@ -1096,12 +1093,12 @@ nav ul li:last-child a {
   margin-bottom: 40px;
 }
 
-/* Grid de servicios */
+/* Grid horizontal de servicios */
 .service-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  display: flex;              /* horizontal */
+  justify-content: center;
   gap: 30px;
-  margin-bottom: 50px;
+  flex-wrap: wrap;            /* permite que se acomoden si no caben */
 }
 
 .service-box {
@@ -1109,6 +1106,7 @@ nav ul li:last-child a {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   padding: 25px;
+  width: 260px;               /* ancho fijo para horizontal */
   text-align: left;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -1119,7 +1117,7 @@ nav ul li:last-child a {
 }
 
 .service-box h3 {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
   font-weight: 700;
   color: #e91e63; /* rosa */
   margin-bottom: 10px;
@@ -1171,6 +1169,7 @@ nav ul li:last-child a {
   margin: 5px 0;
   font-size: 0.95rem;
 }
+
 
 /* =========================
    TERCERA -SECCION BLOG 
