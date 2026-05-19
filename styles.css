@@ -23,10 +23,10 @@ body {
 .logo-overlap {
   position: absolute;
   left: 70px;
-  top: 20px;
-  width: 380px;
-  z-index: 1; /* más bajo para que el texto quede encima */
-  opacity: 0.9; /* opcional, da un efecto suave */
+  top: 40px; /* lo baja un poco para separarlo del texto */
+  width: 280px; /* antes 380px, más equilibrado */
+  z-index: 1; /* mantiene el texto encima */
+  opacity: 0.9; /* efecto suave */
 }
 
 .logo-overlap img {
