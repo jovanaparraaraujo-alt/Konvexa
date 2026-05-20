@@ -1592,5 +1592,53 @@ header nav ul li a.active {
 
 .footer-contacto .copy {
   margin-top: 15px;
-  font-size: 0.9rem;
+  font-size: 
+  0.95rem;
+}
+
+/* =========================
+   FOOTER REDES SOCIALES
+========================= */
+
+.redes-premium-footer {
+  margin-top: 15px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes-premium-footer a {
+  width: 45px;
+  height: 45px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  color: white;
+  font-size: 18px;
+  text-decoration: none;
+  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+}
+
+/* Instagram */
+.redes-premium-footer a:nth-child(1) {
+  background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
+}
+
+/* Facebook */
+.redes-premium-footer a:nth-child(2) {
+  background: #1877F2;
+}
+
+/* LinkedIn */
+.redes-premium-footer a:nth-child(3) {
+  background: #0A66C2;
+}
+
+/* Hover elegante */
+.redes-premium-footer a:hover {
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: 0 12px 25px rgba(0,0,0,0.25);
 }
