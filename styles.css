@@ -1637,6 +1637,11 @@ header nav ul li a.active {
   background: #0A66C2;
 }
 
+/* WhatsApp */
+.redes-premium-footer .wa {
+  background: #25D366;
+}
+
 /* Hover elegante */
 .redes-premium-footer a:hover {
   transform: translateY(-5px) scale(1.1);
