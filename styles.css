@@ -1432,19 +1432,25 @@ header nav ul li a.active {
    FOOTER PRIVACIDAD
 ========================= */
 .footer-privacidad {
-  background-color: #0b1220c2;
-  color: #fff;
+  background-color: #0a2e5c; /* Azul fuerte */
+  color: #ffffff; /* Texto blanco */
   text-align: center;
   padding: 30px 20px;
 }
 
 .footer-privacidad .copy {
   font-size: 0.95rem;
+  color: #ffffff; /* Asegura que el texto sea blanco */
 }
 
 .footer-privacidad .privacidad-link {
-  color: #e91e63;
+  color: #e91e63; /* Rosa Konvexa */
   font-weight: 600;
+  text-decoration: none;
+}
+
+.footer-privacidad .privacidad-link:hover {
+  text-decoration: underline;
 }
 
 /* =========================
