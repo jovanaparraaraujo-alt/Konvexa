@@ -423,6 +423,32 @@ nav ul li:last-child a {
   font-size: 1.8rem;
 }
 
+/* Certificación CIE */
+
+.cie-certificacion {
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.cie-certificacion img {
+  width: 140px;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.cie-certificacion h3 {
+  color: #e91e63;
+  margin-bottom: 10px;
+  font-size: 1.5rem;
+}
+
+.cie-certificacion p {
+  color: #555;
+  max-width: 600px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+
 /* =========================
    RESPONSIVE DESIGN
 ========================= */
