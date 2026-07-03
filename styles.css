@@ -326,7 +326,7 @@ nav ul li:last-child a {
   border-radius: 2px;
 }
 
- /* =========================
+/* =========================
    BENEFICIOS ADICIONALES
 ========================= */
 
@@ -338,12 +338,15 @@ nav ul li:last-child a {
   background: #ffffff;
   border-radius: 18px;
   overflow: hidden;
+  text-align: center; /* centra todo el contenido */
 }
 
 /* Cada bloque */
 .extra-benefit {
   display: flex;
+  flex-direction: column; /* ícono arriba, texto abajo */
   align-items: center;
+  justify-content: center;
   gap: 14px;
   padding: 30px 18px;
   position: relative;
@@ -362,16 +365,15 @@ nav ul li:last-child a {
 
 /* Íconos */
 .extra-benefit img {
-  width: 90px;
-  height: 90px;
+  width: 70px;
+  height: 70px;
   object-fit: contain;
-  flex-shrink: 0;
-  margin-left: -10px;
+  margin-bottom: 10px;
 }
 
 /* Texto */
 .extra-benefit .text {
-  text-align: left;
+  text-align: center; /* centra el texto debajo del ícono */
 }
 
 .extra-benefit h3 {
