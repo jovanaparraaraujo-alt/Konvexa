@@ -79,7 +79,9 @@ nav ul li:last-child a {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 0 80px 90px;
+  gap: 80 px; 
+  padding: 0 20px 90px;
+  max-width: 1200px;
   background: #fff;
   position: relative;
   overflow: hidden;
