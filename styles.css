@@ -22,9 +22,12 @@ body {
 
 /* Logo KONVEXA */
 .logo-overlap {
-  position: relative;
-  width: 280px;
-  margin-right: auto; /* lo empuja a la izquierda pero dentro del flujo */
+  position: absolute;
+  left: 70px;
+  top: 40px; /* lo baja un poco para separarlo del texto */
+  width: 280px; /* antes 380px, más equilibrado */
+  z-index: 1; /* mantiene el texto encima */
+  opacity: 0.9; /* efecto suave */
 }
 
 .logo-overlap img {
