@@ -338,18 +338,19 @@ nav ul li:last-child a {
   background: #ffffff;
   border-radius: 18px;
   overflow: hidden;
-  text-align: center; /* centra todo el contenido */
+  text-align: center;
 }
 
 /* Cada bloque */
 .extra-benefit {
   display: flex;
-  flex-direction: column; /* ícono arriba, texto abajo */
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 14px;
   padding: 30px 18px;
   position: relative;
+  min-height: 220px; /* asegura que todos los bloques tengan la misma altura */
 }
 
 /* Línea divisora elegante */
@@ -373,7 +374,8 @@ nav ul li:last-child a {
 
 /* Texto */
 .extra-benefit .text {
-  text-align: center; /* centra el texto debajo del ícono */
+  text-align: center;
+  max-width: 250px; /* controla el ancho del texto para que no se desborde */
 }
 
 .extra-benefit h3 {
