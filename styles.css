@@ -134,9 +134,9 @@ nav ul li:last-child a {
 
 /* Imagen ejecutivo */
 .hero-image img {
-  width: 88%;
+  width: 100%;
   max-width: 430px;
-  object-fit: contain;
+  height: auto;
 }
 
 /* Por que elegirnos */
