@@ -89,9 +89,8 @@ nav ul li:last-child a {
 
 /* Texto */
 .hero-text {
-  width: 50%;
-  position: relative;
-  z-index: 5;
+  flex: 1;
+  max-width: 580px;
   padding-top: 170px;
 }
 
