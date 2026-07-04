@@ -1647,49 +1647,38 @@ header nav ul li a.active {
 ========================= */
 
 .redes-premium-footer {
-  margin-top: 15px;
   display: flex;
-  gap: 12px;
   justify-content: center;
   align-items: center;
+  gap: 20px; /* espacio entre íconos */
+  margin-top: 20px;
 }
 
+/* Íconos */
 .redes-premium-footer a {
-  width: 45px;
-  height: 45px;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 55px;
+  height: 55px;
   border-radius: 50%;
-  color: white;
-  font-size: 18px;
-  text-decoration: none;
-  box-shadow: 0 8px 18px rgba(0,0,0,0.15);
-  transition: all 0.3s ease;
-}
-
-/* Instagram */
-.redes-premium-footer a:nth-child(1) {
-  background: linear-gradient(45deg, #f9ce34, #ee2a7b, #6228d7);
-}
-
-/* Facebook */
-.redes-premium-footer a:nth-child(2) {
-  background: #1877F2;
+  font-size: 1.6rem;
+  color: #fff;
+  transition: transform 0.3s ease, background 0.3s ease;
 }
 
 /* LinkedIn */
-.redes-premium-footer a:nth-child(3) {
-  background: #0A66C2;
+.redes-premium-footer a:nth-child(1) {
+  background: linear-gradient(135deg, #0077b5, #005582);
 }
 
 /* WhatsApp */
-.redes-premium-footer .wa {
-  background: #25D366;
+.redes-premium-footer a:nth-child(2) {
+  background: linear-gradient(135deg, #25D366, #128C7E);
 }
 
-/* Hover elegante */
+/* Efecto hover */
 .redes-premium-footer a:hover {
-  transform: translateY(-5px) scale(1.1);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.25);
+  transform: scale(1.1);
+  filter: brightness(1.2);
 }
