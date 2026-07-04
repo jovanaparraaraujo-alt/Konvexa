@@ -366,8 +366,8 @@ nav ul li:last-child a {
 
 /* Íconos */
 .extra-benefit img {
-  width: 100px; /* antes 70px */
-  height: 100px; /* antes 70px */
+  width: 120px; /* antes 70px */
+  height: 120px; /* antes 70px */
   object-fit: contain;
   margin-bottom: 12px;
   transition: transform 0.3s ease;
