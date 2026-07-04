@@ -366,10 +366,16 @@ nav ul li:last-child a {
 
 /* Íconos */
 .extra-benefit img {
-  width: 70px;
-  height: 70px;
+  width: 100px; /* antes 70px */
+  height: 100px; /* antes 70px */
   object-fit: contain;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  transition: transform 0.3s ease;
+}
+
+/* Efecto sutil al pasar el cursor */
+.extra-benefit img:hover {
+  transform: scale(1.1);
 }
 
 /* Texto */
