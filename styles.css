@@ -1637,6 +1637,101 @@ header nav ul li a.active {
   width: 360px;
 }
 
+/* =========================
+   FORMULARIO DE CONTACTO
+========================= */
+
+.contact-form {
+  width: 100%;
+  max-width: 840px;
+  margin: 30px auto 0;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.form-row {
+  display: flex;
+  gap: 16px;
+  width: 100%;
+}
+
+.form-row input {
+  flex: 1;
+  min-width: 0;
+}
+
+.contact-form input,
+.contact-form textarea {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 14px 16px;
+
+  border: 1px solid #d7d7d7;
+  border-radius: 8px;
+
+  font-family: inherit;
+  font-size: 1rem;
+
+  background-color: #fff;
+  color: #0b1220;
+
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #e91e63;
+  box-shadow: 0 0 0 3px rgba(233, 30, 99, 0.10);
+}
+
+.contact-form textarea {
+  resize: vertical;
+  min-height: 130px;
+}
+
+.btn-secondary {
+  align-self: center;
+
+  background-color: #e91e63;
+  color: #fff;
+
+  padding: 13px 35px;
+  border: none;
+  border-radius: 8px;
+
+  font-size: 1rem;
+  font-weight: 600;
+
+  cursor: pointer;
+
+  transition: background-color 0.3s ease,
+              transform 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background-color: #c2185b;
+  transform: translateY(-1px);
+}
+
+/* Celulares */
+@media (max-width: 768px) {
+
+  .form-row {
+    flex-direction: column;
+  }
+
+  .contact-form {
+    margin-top: 25px;
+  }
+
+  .btn-secondary {
+    width: 100%;
+  }
+
+}
+
 /* Responsive */
 
 @media (max-width: 768px) {

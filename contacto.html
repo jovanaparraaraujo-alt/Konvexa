@@ -42,10 +42,6 @@
         referrerpolicy="strict-origin-when-cross-origin">
       </iframe>
     </div>
-
-    <p class="map-address">
-      Osa Menor 190-188, Prado Churubusco, Coyoacán, 04230 Ciudad de México, CDMX
-    </p>
   </div>
 
   <div class="contact-secondary">
@@ -80,11 +76,24 @@
 </div>
 
     <form class="contact-form">
-      <input type="text" placeholder="Nombre Completo" required>
-      <input type="email" placeholder="Correo Electrónico" required>
-      <textarea placeholder="Mensaje" rows="5" required></textarea>
-      <button type="submit" class="btn-secondary">Enviar Mensaje</button>
-    </form>
+
+  <div class="form-row">
+    <input type="text" placeholder="Nombre Completo" required>
+    <input type="email" placeholder="Correo Electrónico" required>
+  </div>
+
+  <div class="form-row">
+    <input type="tel" placeholder="Teléfono" required>
+    <input type="text" placeholder="Ciudad" required>
+  </div>
+
+  <textarea placeholder="Mensaje" rows="5" required></textarea>
+
+  <button type="submit" class="btn-secondary">
+    Enviar Mensaje
+  </button>
+
+</form>
   </section>
 
   <!-- Footer -->
