@@ -76,7 +76,7 @@
 
 <p>
   <a href="tel:+525590033344">
-    55 9003 3344 Ext. 12
+    55 9003 3344 Ext. 02
   </a>
 </p>
     </div>
@@ -85,23 +85,52 @@
 
 </div>
 
-    <form class="contact-form">
+    <form class="contact-form" id="contactForm">
 
   <div class="form-row">
-    <input type="text" placeholder="Nombre Completo" required>
-    <input type="email" placeholder="Correo Electrónico" required>
+    <input
+      type="text"
+      name="nombre"
+      placeholder="Nombre Completo"
+      required
+    >
+
+    <input
+      type="email"
+      name="correo"
+      placeholder="Correo Electrónico"
+      required
+    >
   </div>
 
   <div class="form-row">
-    <input type="tel" placeholder="Teléfono" required>
-    <input type="text" placeholder="Ciudad" required>
+    <input
+      type="tel"
+      name="telefono"
+      placeholder="Teléfono"
+      required
+    >
+
+    <input
+      type="text"
+      name="ciudad"
+      placeholder="Ciudad"
+      required
+    >
   </div>
 
-  <textarea placeholder="Mensaje" rows="5" required></textarea>
+  <textarea
+    name="mensaje"
+    placeholder="Mensaje"
+    rows="5"
+    required>
+  </textarea>
 
   <button type="submit" class="btn-secondary">
     Enviar Mensaje
   </button>
+
+  <p id="formStatus"></p>
 
 </form>
   </section>
@@ -110,9 +139,6 @@
   <footer class="footer-contacto">
     <div class="footer-info">
       <p><strong>Konvexa</strong> | Soluciones de Recuperación de Cartera</p>
-      <p>Oficina: Osa Menor 190-188, Prado Churubusco, Coyoacán, 04230 Ciudad de México, CDMX</p>
-      <p>WhatsApp: <a href="https://wa.me/5633215179">56 3321 5179</a></p>
-      <p>Correo: <a href="mailto:direccion@konvexa.com.mx">direccion@konvexa.com.mx</a></p>
     </div>
     <p class="copy">© 2026 Konvexa - Todos los derechos reservados</p>
 
@@ -128,6 +154,45 @@
 
 </div>
   </footer>
+
+  <script>
+const form = document.getElementById("contactForm");
+const status = document.getElementById("formStatus");
+
+form.addEventListener("submit", async (e) => {
+  e.preventDefault();
+
+  status.textContent = "Enviando mensaje...";
+
+  const datos = {
+    nombre: form.nombre.value,
+    correo: form.correo.value,
+    telefono: form.telefono.value,
+    ciudad: form.ciudad.value,
+    mensaje: form.mensaje.value
+  };
+
+  try {
+    const respuesta = await fetch("/api/contacto", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(datos)
+    });
+
+    if (!respuesta.ok) {
+      throw new Error("Error al enviar");
+    }
+
+    status.textContent = "✅ Mensaje enviado correctamente";
+    form.reset();
+
+  } catch (error) {
+    status.textContent = "❌ No se pudo enviar el mensaje";
+  }
+});
+</script>
 
 </body>
 </html>
